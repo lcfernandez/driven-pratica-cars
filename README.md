@@ -1,6 +1,6 @@
 # driven-pratica-cars
 
-* **Prática Cars - TS + Prisma** do aluno Luiz Cláudio F. Fernandez, Turma 8 da Driven.
+* **Atividade prática: Administrando carros com TS + Prisma** do aluno Luiz Cláudio F. Fernandez, Turma 8 da Driven.
 
 ## Instruções para rodar localmente
 
@@ -26,19 +26,23 @@
     npm install
     ```
 
-- Crie um arquivo `.env` preenchendo as variáveis de acordo com a configuração do banco criado anteriormente e com os devidos ajustes baseados na sua configuração local. A conexão com o banco exige uma configuração semelhante a:
+- Crie um arquivo `.env` preenchendo as variáveis de acordo com a configuração do banco criado anteriormente e com os devidos ajustes baseados na sua configuração local:
 
-    ```
-    DATABASE_URL = postgres://<usuario>:<senha>@localhost:5432/<banco>?schema=public
-    ```
+    - A conexão com o banco exige uma configuração semelhante a:
 
-    onde `<usuario>`, `<senha>` e `<banco>` são o usuário, senha e banco do seu ambiente local e assumindo que o Postgres esteja rodando na porta padrão (5432);
+        ```
+        DATABASE_URL = postgres://<usuario>:<senha>@localhost:5432/<banco>?schema=public
+        ```
 
-    ```
-    PORT = <porta>
-    ```
+        onde `<usuario>`, `<senha>` e `<banco>` são o usuário, senha e banco do seu ambiente local e assumindo que o Postgres esteja rodando na porta padrão (5432);
 
-    onde `<porta>` é a porta desejada para que aplicação rode. Caso essa variável não seja especificada, por padrão, será feita a tentativa de conexão na porta 5000.
+    - Uma variável opcional é a:
+
+        ```
+        PORT = <porta>
+        ```
+
+        onde `<porta>` é a porta desejada para que aplicação rode. Caso essa variável não seja especificada, por padrão, será feita a tentativa de conexão na porta 5000.
 
 * Rode o projeto no ambiente de desenvolvimento com o comando:
 
